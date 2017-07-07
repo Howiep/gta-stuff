@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/css/materialize.min.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/js/materialize.min.js"></script>
+    <style>
+        .nav-tabs li {
+            padding: 5px 0 5px 0;
+        }
+
+        .nav-tabs li a {
+            width: 100%;
+        }
+
+        .ruleset-content {
+            display: none;
+            background: #ededed;
+            padding: 15px;
+        }
+
+        .ruleset-content.current {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="card">
+            <div class="row">
+                <div class="col s12 card-content">
+                    <h2>DMV - Howies Køreskole</h2>
+                    <p>Lost Santos Institut for Motorkøretøjer(DMV)</p>
+                    <a class='dropdown-button btn green darken-1' href='#' data-activates='dropdown1'>Regler, love og køreprøver</a>
+                    <ul id='dropdown1' class='dropdown-content rulesets'>
+                        <li class="green lighten-4"><a data-tab="ruleset1">Hvordan du får et kørekort</a></li>
+                        <li class="green lighten-5"><a data-tab="ruleset2">Hastighed og biltyper</a></li>
+                        <li class="green lighten-5"><a data-tab="ruleset3">Beredskabstjenester</a></li>
+                        <li class="green lighten-5"><a data-tab="ruleset4">Parkering</a></li>
+                        <li class="green lighten-5"><a data-tab="ruleset5">Hensynsløs kørsel</a></li>
+                        <li class="green lighten-5"><a data-tab="ruleset6">Alkohol og stoffer</a></li>
+                        <li class="green lighten-5"><a data-tab="ruleset7">Skilte, markeringer og trafiklys</a></li>
+                        <li class="red lighten-4"><a data-tab="ruleset8">Start prøverne</a></li>
+                    </ul>
+                </div>
+                <div class="ruleset-content current" id="ruleset1">
+                    <ul class="collection with-header">
+                        <li class="collection-header">
+                            <h5>Hvordan du får et kørekort</h5>
+                            <p>
+                                <strong>Hvis du ønsker at få et kørekort er der nogle få skridt du skal igennem. (LÆS GRUNDIGT)</strong>
+                            </p>
+                        </li>
+                        <li class="collection-item"> Først bliver du nødt til at lære reglerne og vejens love, så du er klar over dit ansvar, når du kører
+                            rundt i et fartøj og kan være hurtig til at tage beslutninger i en hektisk situation på vejen.</li>
+                        <li class="collection-item">
+                            Når du føler at du har styr på reglerne kan du teste din viden med en teori prøve. For at bestå skal du svare rigtig på mere
+                            end 60% af spørgsmålene. Husk at denne prøve koster penge og du kan ikke få pengene retur hvis
+                            du svarer dumper.
+                        </li>
+                        <li class="collection-item">
+                            Når du har bestået prøven kan du vælge hvilken form for køretøj du vil gerne vil have kørekort til. Dine køreevner vil blive
+                            vurderet på gaderne af en vejledende kørelærer.
+                        </li>
+                    </ul>
+                </div>
+                <div class="ruleset-content" id="ruleset2">
+                    <ul class="collection with-header">
+                        <li class="collection-header">
+                            <h5>Hastighed og biltyper</h5>
+                        </li>
+                        <li class="collection-item">Op til 50 km/t i beboede områder, som byen los santos og de små byer.</li>
+                        <li class="collection-item">Op til 80 km/t udenfor beboede områder, som landeveje og uden for de små byer.</li>
+                        <li class="collection-item">Op til 130 km/t på motorvejen i både beboede områder og udenfor. </li>
+                        <li class="collection-item">beboede områder er steder som ikke er inde i nogle byer. beboede områder indeholder ofte lyskryds
+                            og fodgængerfelter. </li>
+                        <li class="collection-item">Motorvejen er en vej hvor der er flere baner og hvor der ikke er fodgængerfelter, lyskryds og hvor
+                            de modkørende baner er separeret med enten afstand eller hegn. </li>
+                    </ul>
+                </div>
+                <div class="ruleset-content" id="ruleset3">
+                    <ul class="collection with-header">
+                        <li class="collection-header">
+                            <h5>Beredskabstjenester</h5>
+                            <P>Beredskabstjenestens køretøjer med tændte sirener har priotet over andre køretøjer på vejene!</P>
+                        </li>
+                        <li class="collection-item">Hvis der kommer et køretøj fra beredskabstjenesten skal du køre ind til højre side af vejen og vente
+                            til den er passeret. Dette gælder ikke hvis køretøjet er på vej i den modsatte retning og er
+                            fordelt af enten græs eller hegn.</li>
+                        <li class="collection-item">Hvis du bliver stoppet af en betjent skal du køre ind til højre side af vejen eller til en nærliggende
+                            parkeringsplads og afvente instrukser fra politibetjenten.</li>
+                        <li class="collection-item">Beredskabstjenestens køretøjer må ignorer trafik skilte, trafik lys og fartgrænser, men skal dog
+                            stadig tage hensyn til deres omgivelser, især ved lyskryds. </li>
+                    </ul>
+                </div>
+                <div class="ruleset-content" id="ruleset4">
+                    <ul class="collection with-header">
+                        <li class="collection-header">
+                            <h5>Parkering</h5>
+                            <P>Ulovligt parkerede biler bliver beslaglagt og konfiskerede indtil der bliver betalt en bøde!</P>
+                        </li>
+                        <li class="collection-item">Det er ulovligt at parkere på fortovet, i midten af vejen, motorvejen eller offroad. Hvis du bliver
+                            stoppet af en betjent eller oplever problemer med dit køretøj skal du køre ind til højre side
+                            af vejen. </li>
+                        <li class="collection-item">Du må parkere din bil på enhver parkeringsplads eller ethvert sted på din egen grund. Du må også
+                            parkere på siden af vejen hvis det ikke er i et kryds eller hvis</li>
+
+                    </ul>
+                </div>
+                <div class="ruleset-content" id="ruleset5">
+                    <ul class="collection with-header">
+                        <li class="collection-header">
+                            <h5>Hensynsløs kørsel</h5>
+                        </li>
+                        <li class="collection-item">Du skal altid holde dig i højre side af vejen når du kører ligeud.
+                        </li>
+                        <li class="collection-item">Det er ikke tilladt at køre offroad inde i nogle af byerne, men gælder dog ikke hvis du kører på
+                            din egen grund.</li>
+                        <li class="collection-item">Ødelæggelse af offentlig ejendom, som trafiklys, skilte, gadelys, hegn osv skal erstattes. </li>
+                    </ul>
+                </div>
+                <div class="ruleset-content" id="ruleset6">
+                    <ul class="collection with-header">
+                        <li class="collection-header">
+                            <h5>Alkohol og stoffer</h5>
+                        </li>
+                        <li class="collection-item">Det er forbudt at styre et køretøj hvis din alkoholprocenten i dit blod er over 0.08%.</li>
+                        <li class="collection-item">Det er ikke tilladt at styre et køretøj hvis du har indtaget euforiserende stoffer. Det er ligemeget
+                            om stofferne er lovlige eller ej.</li>
+                    </ul>
+                </div>
+                <div class="ruleset-content" id="ruleset7">
+                    <ul class="collection with-header">
+                        <li class="collection-header">
+                            <h5>Skilte, markeringer og trafiklys</h5>
+                        </li>
+                        <li class="collection-item">Du må gøre gennem et lyskryds hvis lyset er grønt. Hvis lyset er gult må du kun køre igennem hvis
+                            du ikke kan nå at stoppe på en sikker måde i tide.</li>
+                        <li class="collection-item">Når du stopper for rødt lys skal du holde bagved fodgængerfeltet og hvis det ikke er der skal du
+                            stoppe ved linjen i krydset. </li>
+                        <li class="collection-item">Du skal altid stoppe for stop skilte og eller markeringer hvis trafiklysene ikke er tændte. </li>
+                        <li class="collection-item">
+                            <li class="collection-item">Du skal altid stoppe for stop skilte og eller markeringer hvis trafiklysene ikke er tændte. </li>
+                        </li>
+                        <li class="collection-item">Et område markeret med gul eller hvide streger indikere at det er forbudt at køre ind over. Hvis
+                            man kommer ud for at situation hvor dit køretøj ikke fungere mere er det tilladt at holde her
+                            indtil køretøjet bliver repareret. </li>
+
+                    </ul>
+                </div>
+                <div class="ruleset-content" id="ruleset8">
+                    <ul class="nav-tabs">
+                        <li>
+                            <a class="waves-effect waves-light btn orange">Start teori prøve</a>
+                        </li>
+                        <br>
+                        <li>
+                            <a class="waves-effect waves-light btn  red darken-4">Køreprøve til bil</a>
+                        </li>
+                        <li>
+                            <a class="waves-effect waves-light btn  red darken-4">Køreprøve til motorcykel</a>
+                        </li>
+                        <li>
+                            <a class="waves-effect waves-light btn  red darken-4">Køreprøve til lastbil</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script>
+        $(document).ready(function () {
+            $('ul.rulesets li a').click(function () {
+                var tab_id = $(this).attr('data-tab');
+
+                $('.ruleset-content').removeClass('current');
+
+                $("#" + tab_id).addClass('current');
+            })
+        })
+    </script>
+</body>
+
+</html>

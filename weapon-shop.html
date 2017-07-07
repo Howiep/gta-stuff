@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/css/materialize.min.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/js/materialize.min.js"></script>
+    <style>
+        .nav-tabs li {
+            padding: 5px 0 5px 0;
+        }
+
+        .nav-tabs li a {
+            width: 100%;
+        }
+
+        .weaponset-content {
+            display: none;
+            background: #ededed;
+            padding: 15px;
+        }
+
+        .weaponset-content.current {
+            display: block;
+        }
+
+        .tabs .tab a {
+            color: antiquewhite;
+        }
+        .web-nav div a{
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="">
+        <div class="card">
+            <div class="row">
+                <div class="col s12 card-content">
+                    <h2>Våben shop</h2>
+                    <p>Bradberry co.</p>
+                    <ul>
+                        <li>
+                            For at vælge et våben skal du først vælge en våbentype. For at navigere mellem våben skal du bruge pilene til højre og venstre
+                        </li>
+                        <li>
+                            Våben licens er krævet
+                        </li>
+                        <li>
+                            Du kan få våben licens ved politistationen
+                        </li>
+                    </ul>
+                    <a class='dropdown-button btn deep-purple' href='#' data-activates='dropdown1'>Våben type</a>
+                    <ul id='dropdown1' class='dropdown-content weaponsets'>
+                        <li class="deep-purple lighten-5"><a data-tab="weaponset1">Håndvåben</a></li>
+                        <li class="deep-purple lighten-5"><a data-tab="weaponset2">Rifler</a></li>
+                        <li class="deep-purple lighten-5"><a data-tab="weaponset3">Shotguns</a></li>
+                    </ul>
+                </div>
+                <div class="weaponset-content current" id="weaponset1">
+                    <ul class="collection with-header">
+                        <li class="collection-header">
+                            <p>
+                                <strong>Håndvåben</strong>
+                            </p>
+                        </li>
+                        <div>
+                            <li class="collection-item"> <strong>Pistol</strong> </li>
+                            <li class="collection-item col s6">
+                                <strong>Damage</strong>
+                                <div class="progress deep-purple lighten-4" style="height: 20px">
+                                    <div class="determinate deep-purple" style="width: 40%"></div>
+                                </div>
+                            </li>
+                            <li class="collection-item col s6">
+                                <strong>Speed</strong>
+                                <div class="progress deep-purple lighten-4" style="height: 20px">
+                                    <div class="determinate deep-purple" style="width: 50%"></div>
+                                </div>
+                            </li>
+                            <li class="collection-item col s6">
+                                <strong>Accuracy</strong>
+                                <div class="progress deep-purple lighten-4" style="height: 20px">
+                                    <div class="determinate deep-purple" style="width: 60%"></div>
+                                </div>
+                            </li>
+                            <li class="collection-item col s6">
+                                <strong>Range</strong>
+                                <div class="progress deep-purple lighten-4" style="height: 20px">
+                                    <div class="determinate deep-purple" style="width: 40%"></div>
+                                </div>
+                            </li>
+                        </div>
+                    </ul>
+                    <div class="row wep-nav">
+                        <div class="col s3">
+                            <a class="btn deep-purple" href="#test1">tilbage pil</a>
+                        </div>
+                        <div class="col s6">
+                            <a class="btn red darken-4" href="#test2">køb våben</a>
+                        </div>
+                        <div class="col s3">
+                            <a class="btn deep-purple" href="#test3">frem pil</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="weaponset-content" id="weaponset2">
+                    <ul class="collection with-header">
+                        <li class="collection-header">
+                            <h5>Hastighed og biltyper</h5>
+                        </li>
+                        <li class="collection-item">Op til 50 km/t i beboede områder, som byen los santos og de små byer.</li>
+                        <li class="collection-item">Op til 80 km/t udenfor beboede områder, som landeveje og uden for de små byer.</li>
+                        <li class="collection-item">Op til 130 km/t på motorvejen i både beboede områder og udenfor. </li>
+                        <li class="collection-item">beboede områder er steder som ikke er inde i nogle byer. beboede områder indeholder ofte lyskryds
+                            og fodgængerfelter. </li>
+                        <li class="collection-item">Motorvejen er en vej hvor der er flere baner og hvor der ikke er fodgængerfelter, lyskryds og hvor
+                            de modkørende baner er separeret med enten afstand eller hegn. </li>
+                    </ul>
+                </div>
+                <div class="weaponset-content" id="weaponset3">
+                    <ul class="collection with-header">
+                        <li class="collection-header">
+                            <h5>Hastighed og biltyper</h5>
+                        </li>
+                        <li class="collection-item">Op til 50 km/t i beboede områder, som byen los santos og de små byer.</li>
+                        <li class="collection-item">Op til 80 km/t udenfor beboede områder, som landeveje og uden for de små byer.</li>
+                        <li class="collection-item">Op til 130 km/t på motorvejen i både beboede områder og udenfor. </li>
+                        <li class="collection-item">beboede områder er steder som ikke er inde i nogle byer. beboede områder indeholder ofte lyskryds
+                            og fodgængerfelter. </li>
+                        <li class="collection-item">Motorvejen er en vej hvor der er flere baner og hvor der ikke er fodgængerfelter, lyskryds og hvor
+                            de modkørende baner er separeret med enten afstand eller hegn. </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script>
+        $(document).ready(function () {
+            $('ul.weaponsets li a').click(function () {
+                var tab_id = $(this).attr('data-tab');
+
+                $('.weaponset-content').removeClass('current');
+
+                $("#" + tab_id).addClass('current');
+            })
+        })
+    </script>
+</body>
+
+</html>

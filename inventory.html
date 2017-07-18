@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/css/materialize.min.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/js/materialize.min.js"></script>
+    <style>
+        html,
+        body {
+            padding: 0px;
+            margin: 0px;
+            background-color: rgb(237, 237, 237);
+            box-shadow: none !important;
+            border: none !important;
+        }
+
+        .container {
+            margin: 0px;
+            max-width: 800px;
+            margin: auto !important;
+        }
+
+        .loader>div {
+            display: block;
+            margin: auto;
+        }
+
+        .container>div.row>div.col {
+            padding: 0px;
+        }
+
+        .card {
+            margin-top: 0px;
+        }
+
+        .collection .collection-item.active {
+            background-color: #81C784;
+            color: #ffffff;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row card">
+            <div class="col s12">
+                <nav class="nav-extended">
+                    <div class="nav-wrapper deep-purple">
+                        <a href="#" class="brand-logo center">Inventar</a>
+                    </div>
+                </nav>
+            </div>
+            <div class="col s6">
+                <div class="wrapper card-content ">
+                    <div class="collection">
+                        <a href="#!" class="collection-item">Produkt #1 <span class="right">23</span></a>
+                        <a href="#!" class="collection-item active">Produkt #2 <span class="right">23</span></a>
+                        <a href="#!" class="collection-item">Produkt #3 <span class="right">23</span></a>
+                        <a href="#!" class="collection-item">Produkt #4 <span class="right">23</span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col s6">
+                <div class="wrapper card-content ">
+                    <div class="collection">
+                        <a href="#!" class="collection-item">Produkt #1 <span class="right">23</span></a>
+                        <a href="#!" class="collection-item">Produkt #2 <span class="right">23</span></a>
+                        <a href="#!" class="collection-item">Produkt #3 <span class="right">23</span></a>
+                        <a href="#!" class="collection-item">Produkt #4 <span class="right">23</span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12">
+                <div class="card-action">
+                    <div class="input-field col s4">
+                        <a class="waves-effect waves-light btn right" href="#">overfør</a>
+                    </div>
+                    <div class="input-field col s4">
+                        <input placeholder="antal" id="first_name" type="number" class="validate">
+                        <label for="antal">Antal</label>
+                    </div>
+                    <div class="input-field col s4">
+                        <a class="waves-effect waves-light btn" href="#">overfør</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

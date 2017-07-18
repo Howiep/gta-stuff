@@ -6,6 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/css/materialize.min.css">
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/js/materialize.min.js"></script>
@@ -38,57 +39,128 @@
             margin-top: 0px;
         }
 
+        .collection {
+            border: 0px;
+        }
+
         .collection .collection-item.active {
             background-color: #81C784;
             color: #ffffff;
+            font-weight: bold;
+        }
+
+        .collection a.collection-item {
+            color: #333333;
+        }
+
+        .fa-chevron-up,
+        .fa-chevron-down {
+            padding: 5px;
+        }
+
+        .progress {
+            height: 22px;
+        }
+
+        .progress-numbers {
+            position: absolute;
+            color: #ffffff;
+            padding: 2px;
+            text-align: center;
+            width: 100%;
         }
     </style>
 </head>
 
 <body>
     <div class="container">
-        <div class="row card">
-            <div class="col s12">
+        <div class="row">
+            <div class="col m6">
                 <nav class="nav-extended">
                     <div class="nav-wrapper deep-purple">
-                        <a href="#" class="brand-logo center">Inventar</a>
+                        <a href="#" class="brand-logo center">Dit Inventar</a>
                     </div>
                 </nav>
-            </div>
-            <div class="col s6">
-                <div class="wrapper card-content ">
-                    <div class="collection">
-                        <a href="#!" class="collection-item">Produkt #1 <span class="right">23</span></a>
-                        <a href="#!" class="collection-item active">Produkt #2 <span class="right">23</span></a>
-                        <a href="#!" class="collection-item">Produkt #3 <span class="right">23</span></a>
-                        <a href="#!" class="collection-item">Produkt #4 <span class="right">23</span></a>
+                <div class="wrapper">
+                    <div class="card">
+                        <div class="wrapper card-content ">
+                            <div class="progress">
+                                <div class="determinate green lighten-2" style="width: 70%"></div>
+                                <span class="progress-numbers">4.5 / 30 kg</span>
+
+                            </div>
+                            <ul class="collection">
+                                <li class="collection-item active">Produkt #1 <span class="right"><i class="fa fa-chevron-up" aria-hidden="true"></i>23<i class="fa fa-chevron-down" aria-hidden="true"></i></span></li>
+                                <li class="collection-item">Produkt #2 <span class="right"><i class="fa fa-chevron-up" aria-hidden="true"></i>23<i class="fa fa-chevron-down" aria-hidden="true"></i></span></li>
+                                <li class="collection-item">Produkt #3 <span class="right"><i class="fa fa-chevron-up" aria-hidden="true"></i>23<i class="fa fa-chevron-down" aria-hidden="true"></i></span></li>
+                                <li class="collection-item">Produkt #4 <span class="right"><i class="fa fa-chevron-up" aria-hidden="true"></i>23<i class="fa fa-chevron-down" aria-hidden="true"></i></span></li>
+                                <li class="collection-item">Produkt #5 <span class="right"><i class="fa fa-chevron-up" aria-hidden="true"></i>23<i class="fa fa-chevron-down" aria-hidden="true"></i></span></li>
+                            </ul>
+                            <a class="waves-effect waves-light btn green lighten-1">Brug</a>
+                            <a class="waves-effect waves-light btn red darken-3">Smid</a>
+
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="col s6">
-                <div class="wrapper card-content ">
-                    <div class="collection">
-                        <a href="#!" class="collection-item">Produkt #1 <span class="right">23</span></a>
-                        <a href="#!" class="collection-item">Produkt #2 <span class="right">23</span></a>
-                        <a href="#!" class="collection-item">Produkt #3 <span class="right">23</span></a>
-                        <a href="#!" class="collection-item">Produkt #4 <span class="right">23</span></a>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row card">
+            <div class="col m6">
+                <nav class="nav-extended">
+                    <div class="nav-wrapper deep-purple">
+                        <a href="#" class="brand-logo center">Dit Inventar</a>
+                    </div>
+                </nav>
+                <div class="wrapper">
+                    <div class="">
+                        <div class="wrapper card-content ">
+                            <div class="progress">
+                                <div class="determinate green lighten-2" style="width: 70%"></div>
+                                <span class="progress-numbers">4.5 / 30 kg</span>
+                            </div>
+                            <ul class="collection">
+                                <li class="collection-item active">Produkt #1 <span class="right"><i class="fa fa-chevron-up" aria-hidden="true"></i>23<i class="fa fa-chevron-down" aria-hidden="true"></i></span></li>
+                                <li class="collection-item">Produkt #2 <span class="right"><i class="fa fa-chevron-up" aria-hidden="true"></i>23<i class="fa fa-chevron-down" aria-hidden="true"></i></span></li>
+                                <li class="collection-item">Produkt #3 <span class="right"><i class="fa fa-chevron-up" aria-hidden="true"></i>23<i class="fa fa-chevron-down" aria-hidden="true"></i></span></li>
+                                <li class="collection-item">Produkt #4 <span class="right"><i class="fa fa-chevron-up" aria-hidden="true"></i>23<i class="fa fa-chevron-down" aria-hidden="true"></i></span></li>
+                                <li class="collection-item">Produkt #5 <span class="right"><i class="fa fa-chevron-up" aria-hidden="true"></i>23<i class="fa fa-chevron-down" aria-hidden="true"></i></span></li>
+                            </ul>
+                            <a class="waves-effect waves-light btn green lighten-1">Brug</a>
+                            <a class="waves-effect waves-light btn red darken-3">Smid</a>
+                            <a class="waves-effect waves-light btn light-blue darken-4"><i class="fa fa-arrows-h" aria-hidden="true"></i></a>
+
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="col s12">
-                <div class="card-action">
-                    <div class="input-field col s4">
-                        <a class="waves-effect waves-light btn right" href="#">overfør</a>
+            <div class="col m6">
+                <nav class="nav-extended">
+                    <div class="nav-wrapper deep-purple">
+                        <a href="#" class="brand-logo center">Andet Inventar</a>
                     </div>
-                    <div class="input-field col s4">
-                        <input placeholder="antal" id="first_name" type="number" class="validate">
-                        <label for="antal">Antal</label>
-                    </div>
-                    <div class="input-field col s4">
-                        <a class="waves-effect waves-light btn" href="#">overfør</a>
+                </nav>
+                <div class="wrapper">
+                    <div class="">
+                        <div class="wrapper card-content ">
+                            <div class="progress">
+                                <div class="determinate green lighten-2" style="width: 70%"></div>
+                                <span class="progress-numbers">4.5 / 30 kg</span>
+                            </div>
+                            <ul class="collection">
+                                <li class="collection-item">Produkt #1 <span class="right"><i class="fa fa-chevron-up" aria-hidden="true"></i>23<i class="fa fa-chevron-down" aria-hidden="true"></i></span></li>
+                                <li class="collection-item">Produkt #2 <span class="right"><i class="fa fa-chevron-up" aria-hidden="true"></i>23<i class="fa fa-chevron-down" aria-hidden="true"></i></span></li>
+                                <li class="collection-item">Produkt #3 <span class="right"><i class="fa fa-chevron-up" aria-hidden="true"></i>23<i class="fa fa-chevron-down" aria-hidden="true"></i></span></li>
+                                <li class="collection-item">Produkt #4 <span class="right"><i class="fa fa-chevron-up" aria-hidden="true"></i>23<i class="fa fa-chevron-down" aria-hidden="true"></i></span></li>
+                                <li class="collection-item">Produkt #5 <span class="right"><i class="fa fa-chevron-up" aria-hidden="true"></i>23<i class="fa fa-chevron-down" aria-hidden="true"></i></span></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
+
             </div>
+
         </div>
     </div>
 </body>
